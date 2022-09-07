@@ -1,91 +1,90 @@
+enum SupportType {
+  actualizacionJava,
+  nominaElectronica,
+  documentoSoporte,
+  nuevoRelease,
+  chatSoporte,
+  perfil,
+  posEnterprise,
+  cloudServices,
+  facturacionElectronica,
+  nominaWeb,
+  crm,
+  eCommerce,
+  biable,
+  solicitudServicios,
+  solicitudRequerimiento,
+  solicitudFormato,
+  solicitudActualizacion,
+  consultaTickets,
+  consultarOP,
+  pqrs,
+}
 
-// enum SupportType {
-//   actualizacionJava,
-//   nominaElectronica,
-//   documentoSoporte,
-//   nuevoRelease,
-//   chatSoporte,
-//   perfil,
-//   posEnterprise,
-//   cloudServices,
-//   facturacionElectronica,
-//   nominaWeb,
-//   crm,
-//   eCommerce,
-//   biable,
-//   solicitudServicios,
-//   solicitudRequerimiento,
-//   solicitudFormato,
-//   solicitudActualizacion,
-//   consultaTickets,
-//   consultarOP,
-//   pqrs,
-// }
+enum KnowledgeType {
+  autocapacitacion,
+  cursosVirtuales,
+  manuales,
+  comunicado,
+  foros,
+  entrenamiento,
+}
 
-// enum KnowledgeType {
-//   autocapacitacion,
-//   cursosVirtuales,
-//   manuales,
-//   comunicado,
-//   foros,
-//   entrenamiento,
-// }
+enum WarningType {
+  incidenteCritico1,
+  incidenteCritico2,
+}
 
-// enum WarningType {
-//   incidenteCritico1,
-//   incidenteCritico2,
-// }
+enum ProfileType {
+  perfil,
+  actualizacion,
+  plantillas,
+  cerrarSesion,
+}
 
-// enum ProfileType {
-//   perfil,
-//   actualizacion,
-//   plantillas,
-//   cerrarSesion,
-// }
+List<String> supportNames = [
+  'Actualización JAVA 1.8 FE Siesa 8.5',
+  'Nómina Electrónica',
+  'Documento soporte no obligados FE',
+  'Nuevo Release y mejoras Siesa 8.5 R210801',
+  'Chat de Soporte',
+  'Perfil Cliente',
+  'Siesa POS Enterprise',
+  'Siesa Cloud Services',
+  'Facturación Electronica',
+  'Siesa Nómina Web',
+  'Siesa CRM',
+  'Siesa e-Commerce',
+  'Siesa Biable',
+  'Solicitud de Servicios',
+  'Solicitud Requerimiento',
+  'Solicitud Formato',
+  'Solicitud Actualización',
+  'Consulta Tickets',
+  'Consultar OP',
+  'PQRS',
+];
 
-// List<String> supportNames = [
-//   'Actualización JAVA 1.8 FE Siesa 8.5',
-//   'Nómina Electrónica',
-//   'Documento soporte no obligados FE',
-//   'Nuevo Release y mejoras Siesa 8.5 R210801',
-//   'Chat de Soporte',
-//   'Perfil Cliente',
-//   'Siesa POS Enterprise',
-//   'Siesa Cloud Services',
-//   'Facturación Electronica',
-//   'Siesa Nómina Web',
-//   'Siesa CRM',
-//   'Siesa e-Commerce',
-//   'Siesa Biable',
-//   'Solicitud de Servicios',
-//   'Solicitud Requerimiento',
-//   'Solicitud Formato',
-//   'Solicitud Actualización',
-//   'Consulta Tickets',
-//   'Consultar OP',
-//   'PQRS',
-// ];
+List<String> knowledgeNames = [
+  'Autocapacitación Nómina Web',
+  'Cursos Virtuales',
+  'Manuales',
+  'Comunicados',
+  'Foros',
+  'Entrenamiento Siesa E-Learning',
+];
 
-// List<String> knowledgeNames = [
-//   'Autocapacitación Nómina Web',
-//   'Cursos Virtuales',
-//   'Manuales',
-//   'Comunicados',
-//   'Foros',
-//   'Entrenamiento Siesa E-Learning',
-// ];
+List<String> warningNames = [
+  'Incidente crítico (Técnico - Siesa Cloud Services',
+  'Incidente crítico (Funcional)',
+];
 
-// List<String> warningNames = [
-//   'Incidente crítico (Técnico - Siesa Cloud Services',
-//   'Incidente crítico (Funcional)',
-// ];
-
-// List<String> profileNames = [
-//   'Perfil Cliente',
-//   'Actualización / Creación contactos',
-//   'Plantillas',
-//   'Cerrar Sesión',
-// ];
+List<String> profileNames = [
+  'Perfil Cliente',
+  'Actualización / Creación contactos',
+  'Plantillas',
+  'Cerrar Sesión',
+];
 
 // List<OpcionLateralModel> listadoLateralCursos = [
 //   OpcionLateralModel.fromJson({
@@ -120,16 +119,16 @@
 //     'name': 'Siesa Perú',
 //     'active': false,
 //   }),
-//   // OpcionLateralModel.fromJson({
-//   //   'route': 'medioscali',
-//   //   'name': 'Medios Municipales Cali',
-//   //   'active': false,
-//   // }),
-//   // OpcionLateralModel.fromJson({
-//   //   'route': 'mediosbogota',
-//   //   'name': 'Medios Municipales Bogotá',
-//   //   'active': false,
-//   // }),
+  // OpcionLateralModel.fromJson({
+  //   'route': 'medioscali',
+  //   'name': 'Medios Municipales Cali',
+  //   'active': false,
+  // }),
+  // OpcionLateralModel.fromJson({
+  //   'route': 'mediosbogota',
+  //   'name': 'Medios Municipales Bogotá',
+  //   'active': false,
+  // }),
 //   OpcionLateralModel.fromJson({
 //     'route': 'certificados',
 //     'name': 'Mis Certificados',

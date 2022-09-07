@@ -1,7 +1,7 @@
 part of './router.dart';
 
 Widget _homePageBuilder(BuildContext context, GoRouterState state) {
-  return Container();
+  return const HomePage();
 }
 
 // Page<void> _detailPageBuilder(BuildContext context, GoRouterState state) {

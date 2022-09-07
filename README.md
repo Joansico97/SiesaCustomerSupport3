@@ -50,7 +50,7 @@ _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para 
 
 ## Versioning 📌
 
-Se utilizó [GitHub](http://semver.org/) para el versionado. Para todas las versiones disponibles [aquí](https://github.com/Joansico97/ZemogaApp).
+Se utilizó [GitHub](http://semver.org/) para el versionado. Para todas las versiones disponibles [aquí](https://github.com/Joansico97/SiesaCustomerSupport3).
 
 
 

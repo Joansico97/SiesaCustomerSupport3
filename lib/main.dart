@@ -19,7 +19,7 @@ class SiesaCustomerSupport extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Zemoga App',
+      title: 'Siesa Customer Support',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
