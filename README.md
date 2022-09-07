@@ -38,8 +38,6 @@ _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para 
 
 ## Built With 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
 * [Flutter](https://flutter.dev/?gclid=CjwKCAjwsMGYBhAEEiwAGUXJaRC2ykyo6a_L_yuoEnpuil0U6SrEtqvVJDo6Jyw5Nm0U2XFpa_83JBoCukcQAvD_BwE&gclsrc=aw.ds) - El framework web usado
 * [Flutter Localizations] - Usado para manejar los idiomas soportados en la traducción de la aplicación
 * [GoRouter](https://pub.dev/packages/go_router) - Enrutador 2.0
