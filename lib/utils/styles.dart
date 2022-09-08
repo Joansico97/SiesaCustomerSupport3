@@ -3,6 +3,12 @@ import 'package:flutter/material.dart';
 class _Styles {
   // HEADER
 
+  TextStyle headerSearch({Color? color = const Color(0xFF000000)}) => TextStyle(
+        color: color,
+        fontWeight: FontWeight.w700,
+        fontSize: 45,
+      );
+
   TextStyle headerOne({Color? color = const Color(0xFF000000)}) => TextStyle(
         color: color,
         fontWeight: FontWeight.w700,

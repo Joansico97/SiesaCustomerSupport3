@@ -6,8 +6,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../utils/utils.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({Key? key}) : super(key: key);
+class Header extends StatelessWidget {
+  const Header({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,11 +26,10 @@ class CustomAppBar extends StatelessWidget {
                   onTap: () {
                     print('hola mundo');
                   },
-                  child: const Text(
+                  child: Text(
                     'Comunicados',
-                    style: TextStyle(
+                    style: styles.boldSmall(
                       color: Colors.white,
-                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
@@ -39,22 +38,20 @@ class CustomAppBar extends StatelessWidget {
                   onTap: () {
                     print('hola mundo');
                   },
-                  child: const Text(
+                  child: Text(
                     'Manuales',
-                    style: TextStyle(
+                    style: styles.boldSmall(
                       color: Colors.white,
-                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 SizedBox(width: size.width(context, .01)),
                 InkWell(
                   onTap: () => context.go('/cursosVirtuales/todos'),
-                  child: const Text(
+                  child: Text(
                     'Cursos virtuales',
-                    style: TextStyle(
+                    style: styles.boldSmall(
                       color: Colors.white,
-                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
@@ -138,11 +135,10 @@ class CustomAppBar extends StatelessWidget {
                 Expanded(child: Container()),
                 InkWell(
                   onTap: () => context.go('/home'),
-                  child: const Text(
+                  child: Text(
                     'Inicio',
-                    style: TextStyle(
+                    style: styles.regularMedium(
                       color: Colors.white,
-                      fontSize: 15,
                     ),
                   ),
                 ),
@@ -159,12 +155,11 @@ class CustomAppBar extends StatelessWidget {
                     );
                   }).toList(),
                   child: Row(
-                    children: const [
+                    children: [
                       Text(
                         'Soporte',
-                        style: TextStyle(
+                        style: styles.regularMedium(
                           color: Colors.white,
-                          fontSize: 15,
                         ),
                       ),
                       Icon(
@@ -210,12 +205,11 @@ class CustomAppBar extends StatelessWidget {
                     );
                   }).toList(),
                   child: Row(
-                    children: const [
+                    children: [
                       Text(
                         'Conocimiento',
-                        style: TextStyle(
+                        style: styles.regularMedium(
                           color: Colors.white,
-                          fontSize: 15,
                         ),
                       ),
                       Icon(
@@ -248,9 +242,8 @@ class CustomAppBar extends StatelessWidget {
                       SizedBox(width: size.width(context, .005)),
                       Text(
                         'Incidente Crítico',
-                        style: TextStyle(
+                        style: styles.regularMedium(
                           color: Colors.white,
-                          fontSize: 15,
                         ),
                       ),
                       Icon(
@@ -274,12 +267,11 @@ class CustomAppBar extends StatelessWidget {
                     );
                   }).toList(),
                   child: Row(
-                    children: const [
+                    children: [
                       Text(
                         'Perfil',
-                        style: TextStyle(
+                        style: styles.regularMedium(
                           color: Colors.white,
-                          fontSize: 15,
                         ),
                       ),
                       Icon(

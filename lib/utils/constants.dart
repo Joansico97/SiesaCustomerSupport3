@@ -1,3 +1,7 @@
+import 'package:siesa_customer_support_web_3/utils/utils.dart';
+
+import '../models/tarjetas_home_model.dart';
+
 enum SupportType {
   actualizacionJava,
   nominaElectronica,
@@ -119,16 +123,16 @@ List<String> profileNames = [
 //     'name': 'Siesa Perú',
 //     'active': false,
 //   }),
-  // OpcionLateralModel.fromJson({
-  //   'route': 'medioscali',
-  //   'name': 'Medios Municipales Cali',
-  //   'active': false,
-  // }),
-  // OpcionLateralModel.fromJson({
-  //   'route': 'mediosbogota',
-  //   'name': 'Medios Municipales Bogotá',
-  //   'active': false,
-  // }),
+// OpcionLateralModel.fromJson({
+//   'route': 'medioscali',
+//   'name': 'Medios Municipales Cali',
+//   'active': false,
+// }),
+// OpcionLateralModel.fromJson({
+//   'route': 'mediosbogota',
+//   'name': 'Medios Municipales Bogotá',
+//   'active': false,
+// }),
 //   OpcionLateralModel.fromJson({
 //     'route': 'certificados',
 //     'name': 'Mis Certificados',
@@ -237,65 +241,65 @@ List<String> profileNames = [
 //   }),
 // ];
 
-// List<TarjetaHomeModel> tarjetasHome = [
-//   TarjetaHomeModel.fromJson({
-//     'route': 'cloudServices',
-//     'title': 'Siesa Cloud Services',
-//     'subTitle':
-//         'Reciba soporte técnico a sus casos y acceda a información oficial con respecto a procesos clave.',
-//     'backgroundColor': colors.azulSiesa,
-//     'imageUrl': 'assets/svg/siesa-cloud.svg',
-//     'buttonColor': colors.azulSecundario,
-//     'buttonText': 'Necesito Soporte',
-//   }),
-//   TarjetaHomeModel.fromJson({
-//     'route': 'facturacionElectronica',
-//     'title': 'Facturación Electronica',
-//     'subTitle':
-//         'Adquiera atención oportuna y efectiva, acceda a información oficial y disfrute de contenido digital clave.',
-//     'backgroundColor': colors.azulSecundario,
-//     'imageUrl': 'assets/svg/siesa-fe.svg',
-//     'buttonColor': colors.azulSiesa,
-//     'buttonText': 'Necesito Soporte',
-//   }),
-//   TarjetaHomeModel.fromJson({
-//     'route': 'posEnterprise',
-//     'title': 'Siesa POS (Siesa Enterprise)',
-//     'subTitle':
-//         'Adquiera en un mismo nivel servicio a casos funcionales y técnicos, y acceda a información y contenido digital clave.',
-//     'backgroundColor': colors.morado,
-//     'imageUrl': 'assets/svg/siesa-pos.svg',
-//     'buttonColor': colors.aqua,
-//     'buttonText': 'Necesito Soporte',
-//   }),
-//   TarjetaHomeModel.fromJson({
-//     'route': 'biable',
-//     'title': 'Siesa Biable',
-//     'subTitle':
-//         'Acceda en un mismo nivel de servicio a atención oportuna y efectiva a casos funcionales y técnicos.',
-//     'backgroundColor': colors.azulSecundario,
-//     'imageUrl': 'assets/svg/siesa-biable.svg',
-//     'buttonColor': colors.azulSiesa,
-//     'buttonText': 'Necesito Soporte',
-//   }),
-//   TarjetaHomeModel.fromJson({
-//     'route': 'eCommerce',
-//     'title': 'Siesa e-Commerce',
-//     'subTitle':
-//         'Reporte situaciones con diferentes prioridades y obtenga atención exclusiva.',
-//     'backgroundColor': colors.aqua,
-//     'imageUrl': 'assets/svg/siesa-ecommerce.svg',
-//     'buttonColor': colors.azulSiesa,
-//     'buttonText': 'Necesito Soporte',
-//   }),
-//   TarjetaHomeModel.fromJson({
-//     'route': 'crm',
-//     'title': 'Siesa CRM',
-//     'subTitle':
-//         'Reciba Soporte Tecnico y Efectivo a sus casos Siesa CRM, Siesa Fichas Técnicas, Siesa Inmobiliario, Siesa SFA.',
-//     'backgroundColor': colors.verde,
-//     'imageUrl': 'assets/svg/siesa-crm.svg',
-//     'buttonColor': colors.azulSiesa,
-//     'buttonText': 'Necesito Soporte',
-//   }),
-// ];
+List<TarjetaHomeModel> tarjetasHome = [
+  TarjetaHomeModel.fromJson({
+    'route': 'cloudServices',
+    'title': 'Siesa Cloud Services',
+    'subTitle':
+        'Reciba soporte técnico a sus casos y acceda a información oficial con respecto a procesos clave.',
+    'backgroundColor': colors.azulSiesa,
+    'imageUrl': 'assets/svg/siesa-cloud.svg',
+    'buttonColor': colors.azulSecundario,
+    'buttonText': 'Necesito Soporte',
+  }),
+  TarjetaHomeModel.fromJson({
+    'route': 'facturacionElectronica',
+    'title': 'Facturación Electronica',
+    'subTitle':
+        'Adquiera atención oportuna y efectiva, acceda a información oficial y disfrute de contenido digital clave.',
+    'backgroundColor': colors.azulSecundario,
+    'imageUrl': 'assets/svg/siesa-fe.svg',
+    'buttonColor': colors.azulSiesa,
+    'buttonText': 'Necesito Soporte',
+  }),
+  TarjetaHomeModel.fromJson({
+    'route': 'posEnterprise',
+    'title': 'Siesa POS (Siesa Enterprise)',
+    'subTitle':
+        'Adquiera en un mismo nivel servicio a casos funcionales y técnicos, y acceda a información y contenido digital clave.',
+    'backgroundColor': colors.morado,
+    'imageUrl': 'assets/svg/siesa-pos.svg',
+    'buttonColor': colors.aqua,
+    'buttonText': 'Necesito Soporte',
+  }),
+  TarjetaHomeModel.fromJson({
+    'route': 'biable',
+    'title': 'Siesa Biable',
+    'subTitle':
+        'Acceda en un mismo nivel de servicio a atención oportuna y efectiva a casos funcionales y técnicos.',
+    'backgroundColor': colors.azulSecundario,
+    'imageUrl': 'assets/svg/siesa-biable.svg',
+    'buttonColor': colors.azulSiesa,
+    'buttonText': 'Necesito Soporte',
+  }),
+  TarjetaHomeModel.fromJson({
+    'route': 'eCommerce',
+    'title': 'Siesa e-Commerce',
+    'subTitle':
+        'Reporte situaciones con diferentes prioridades y obtenga atención exclusiva.',
+    'backgroundColor': colors.aqua,
+    'imageUrl': 'assets/svg/siesa-ecommerce.svg',
+    'buttonColor': colors.azulSiesa,
+    'buttonText': 'Necesito Soporte',
+  }),
+  TarjetaHomeModel.fromJson({
+    'route': 'crm',
+    'title': 'Siesa CRM',
+    'subTitle':
+        'Reciba Soporte Tecnico y Efectivo a sus casos Siesa CRM, Siesa Fichas Técnicas, Siesa Inmobiliario, Siesa SFA.',
+    'backgroundColor': colors.verde,
+    'imageUrl': 'assets/svg/siesa-crm.svg',
+    'buttonColor': colors.azulSiesa,
+    'buttonText': 'Necesito Soporte',
+  }),
+];

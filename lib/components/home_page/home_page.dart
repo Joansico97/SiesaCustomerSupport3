@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:siesa_customer_support_web_3/global_widgets/app_bar.dart';
-import 'package:siesa_customer_support_web_3/global_widgets/footer.dart';
-import 'package:siesa_customer_support_web_3/utils/colors.dart';
-import 'package:siesa_customer_support_web_3/utils/size.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:siesa_customer_support_web_3/utils/utils.dart';
+
+import '../../global_widgets/global_widgets.dart';
+import 'widgets/button_icon.dart';
+import 'widgets/home_card.dart';
+import 'widgets/home_swipper.dart';
+import 'widgets/search_bar.dart';
+import 'widgets/single_card_row.dart';
 
 part './views/home_view_web.dart';
 

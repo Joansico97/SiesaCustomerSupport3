@@ -439,9 +439,10 @@ class Footer extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: size.height(context, .06)),
+              SizedBox(height: size.height(context, .03)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   InkWell(
                     onTap: () {
@@ -452,7 +453,7 @@ class Footer extends StatelessWidget {
                     child: const Icon(
                       FontAwesomeIcons.facebook,
                       color: Colors.white,
-                      size: 40,
+                      size: 30,
                     ),
                   ),
                   SizedBox(width: size.width(context, .02)),
@@ -465,7 +466,7 @@ class Footer extends StatelessWidget {
                     child: const Icon(
                       FontAwesomeIcons.twitter,
                       color: Colors.white,
-                      size: 40,
+                      size: 30,
                     ),
                   ),
                   SizedBox(width: size.width(context, .02)),
@@ -478,7 +479,7 @@ class Footer extends StatelessWidget {
                     child: const Icon(
                       FontAwesomeIcons.instagram,
                       color: Colors.white,
-                      size: 40,
+                      size: 30,
                     ),
                   ),
                   SizedBox(width: size.width(context, .02)),
@@ -491,7 +492,7 @@ class Footer extends StatelessWidget {
                     child: const Icon(
                       FontAwesomeIcons.linkedin,
                       color: Colors.white,
-                      size: 40,
+                      size: 30,
                     ),
                   ),
                   SizedBox(width: size.width(context, .02)),
@@ -504,12 +505,12 @@ class Footer extends StatelessWidget {
                     child: const Icon(
                       FontAwesomeIcons.youtube,
                       color: Colors.white,
-                      size: 40,
+                      size: 30,
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: size.height(context, .01)),
+              SizedBox(height: size.height(context, .02)),
             ],
           ),
         ),
