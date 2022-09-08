@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:siesa_customer_support_web_3/global_widgets/app_bar.dart';
+import 'package:siesa_customer_support_web_3/global_widgets/footer.dart';
 import 'package:siesa_customer_support_web_3/utils/colors.dart';
 import 'package:siesa_customer_support_web_3/utils/size.dart';
 

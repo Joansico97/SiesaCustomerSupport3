@@ -6,16 +6,13 @@ class HomeViewWeb extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        // toolbarHeight: size.height(context, .013),
-        flexibleSpace: const CustomAppBar(),
-      ),
       floatingActionButton: Stack(
         children: [
           Align(
             alignment: Alignment.bottomLeft,
             child: FloatingActionButton(
               onPressed: () {},
+              backgroundColor: colors.azulSiesa,
             ),
           ),
           Align(
@@ -44,7 +41,32 @@ class HomeViewWeb extends StatelessWidget {
         ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
-      body: Container(),
+      body: SizedBox(
+        height: size.fullHeight(context),
+        width: size.fullWidth(context),
+        child: Column(
+          children: [
+            const CustomAppBar(),
+            Expanded(
+              child: ListView(
+                shrinkWrap: true,
+                physics: const BouncingScrollPhysics(),
+                children: [
+                  Container(
+                    padding: size.symmetric(context, .05, .01),
+                    height: size.fullHeight(context),
+                    width: size.fullWidth(context),
+                    child: Container(
+                      color: Colors.red,
+                    ),
+                  ),
+                  const Footer(),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
