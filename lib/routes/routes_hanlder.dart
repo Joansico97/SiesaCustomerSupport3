@@ -9,6 +9,10 @@ Widget notFoundPage(BuildContext context, GoRouterState state) {
   );
 }
 
+Widget _loginPageBuilder(BuildContext context, GoRouterState state) {
+  return const LoginPage();
+}
+
 Widget _homePageBuilder(BuildContext context, GoRouterState state) {
   return const HomePage();
 }

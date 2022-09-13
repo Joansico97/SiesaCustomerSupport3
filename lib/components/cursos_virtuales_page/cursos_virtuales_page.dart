@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:siesa_customer_support_web_3/components/cursos_virtuales_page/views/cursos_virtuales_web_view.dart';
+
+import '../../global_widgets/global_widgets.dart';
+import '../../models/models.dart';
+import '../../utils/utils.dart';
+import 'widgets/course_card_web.dart';
+import 'widgets/little_filtter.dart';
+import 'widgets/opcion_lateral.dart';
+
+part "./views/cursos_virtuales_web_view.dart";
 
 class CursosVirtualesPage extends StatelessWidget {
   const CursosVirtualesPage({

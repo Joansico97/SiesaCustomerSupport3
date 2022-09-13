@@ -1,6 +1,6 @@
 import 'package:siesa_customer_support_web_3/utils/utils.dart';
 
-import '../models/tarjetas_home_model.dart';
+import '../models/models.dart';
 
 enum SupportType {
   actualizacionJava,
@@ -90,156 +90,156 @@ List<String> profileNames = [
   'Cerrar Sesión',
 ];
 
-// List<OpcionLateralModel> listadoLateralCursos = [
-//   OpcionLateralModel.fromJson({
-//     'route': 'todos',
-//     'name': 'Todos los cursos virtuales',
-//     'active': true,
-//   }),
-//   OpcionLateralModel.fromJson({
-//     'route': 'noobligadosfe',
-//     'name': ' Errores Frecuentes Documento Soporte No Obligados FE - Siesa 8.5',
-//     'active': false,
-//   }),
-//   OpcionLateralModel.fromJson({
-//     'route': 'preg-experto-noobligadosfe',
-//     'name': 'Pregúntele al experto: Documento Soporte No Obligados FE',
-//     'active': false,
-//   }),
-//   OpcionLateralModel.fromJson({
-//     'route': 'reporte-evento-fe-venta',
-//     'name':
-//         'Reporte Eventos Factura Electrónica Venta / Resolución 000085 del 2022',
-//     'active': false,
-//   }),
-//   OpcionLateralModel.fromJson({
-//     'route': 'preg-experto-reporte-evento-fe-venta',
-//     'name':
-//         'Pregúntele al experto: Reporte Eventos Factura Electrónica Venta / Resolución 000085 del 2022',
-//     'active': false,
-//   }),
-//   OpcionLateralModel.fromJson({
-//     'route': 'siesaperu',
-//     'name': 'Siesa Perú',
-//     'active': false,
-//   }),
-// OpcionLateralModel.fromJson({
-//   'route': 'medioscali',
-//   'name': 'Medios Municipales Cali',
-//   'active': false,
-// }),
-// OpcionLateralModel.fromJson({
-//   'route': 'mediosbogota',
-//   'name': 'Medios Municipales Bogotá',
-//   'active': false,
-// }),
-//   OpcionLateralModel.fromJson({
-//     'route': 'certificados',
-//     'name': 'Mis Certificados',
-//     'active': false,
-//   }),
-//   OpcionLateralModel.fromJson({
-//     'route': 'cursos-grabados',
-//     'name': 'Cursos Grabados',
-//     'active': false,
-//   }),
-// ];
+List<OpcionLateralModel> listadoLateralCursos = [
+  OpcionLateralModel.fromJson({
+    'route': 'todos',
+    'name': 'Todos los cursos virtuales',
+    'active': true,
+  }),
+  OpcionLateralModel.fromJson({
+    'route': 'noobligadosfe',
+    'name': ' Errores Frecuentes Documento Soporte No Obligados FE - Siesa 8.5',
+    'active': false,
+  }),
+  OpcionLateralModel.fromJson({
+    'route': 'preg-experto-noobligadosfe',
+    'name': 'Pregúntele al experto: Documento Soporte No Obligados FE',
+    'active': false,
+  }),
+  OpcionLateralModel.fromJson({
+    'route': 'reporte-evento-fe-venta',
+    'name':
+        'Reporte Eventos Factura Electrónica Venta / Resolución 000085 del 2022',
+    'active': false,
+  }),
+  OpcionLateralModel.fromJson({
+    'route': 'preg-experto-reporte-evento-fe-venta',
+    'name':
+        'Pregúntele al experto: Reporte Eventos Factura Electrónica Venta / Resolución 000085 del 2022',
+    'active': false,
+  }),
+  OpcionLateralModel.fromJson({
+    'route': 'siesaperu',
+    'name': 'Siesa Perú',
+    'active': false,
+  }),
+  OpcionLateralModel.fromJson({
+    'route': 'medioscali',
+    'name': 'Medios Municipales Cali',
+    'active': false,
+  }),
+  OpcionLateralModel.fromJson({
+    'route': 'mediosbogota',
+    'name': 'Medios Municipales Bogotá',
+    'active': false,
+  }),
+  OpcionLateralModel.fromJson({
+    'route': 'certificados',
+    'name': 'Mis Certificados',
+    'active': false,
+  }),
+  OpcionLateralModel.fromJson({
+    'route': 'cursos-grabados',
+    'name': 'Cursos Grabados',
+    'active': false,
+  }),
+];
 
-// List<LittleFiltterModel> listaOpcionespequenas = [
-//   LittleFiltterModel.fromJson({
-//     'route': 'todos',
-//     'text': 'todos',
-//     'active': true,
-//   }),
-//   LittleFiltterModel.fromJson({
-//     'route': 'type-85',
-//     'text': '8.5',
-//     'active': false,
-//   }),
-//   LittleFiltterModel.fromJson({
-//     'route': 'type-enterprise',
-//     'text': 'Enterprise',
-//     'active': false,
-//   }),
-//   LittleFiltterModel.fromJson({
-//     'route': 'type-nmwb',
-//     'text': 'Nómina Web',
-//     'active': false,
-//   }),
-// ];
+List<LittleFiltterModel> listaOpcionespequenas = [
+  LittleFiltterModel.fromJson({
+    'route': 'todos',
+    'text': 'todos',
+    'active': true,
+  }),
+  LittleFiltterModel.fromJson({
+    'route': 'type-85',
+    'text': '8.5',
+    'active': false,
+  }),
+  LittleFiltterModel.fromJson({
+    'route': 'type-enterprise',
+    'text': 'Enterprise',
+    'active': false,
+  }),
+  LittleFiltterModel.fromJson({
+    'route': 'type-nmwb',
+    'text': 'Nómina Web',
+    'active': false,
+  }),
+];
 
-// List<CursosVirtualesModel> listaCursosVirtuales = [
-//   CursosVirtualesModel.fromJson({
-//     'courseName': 'Configuración de descuentos en el pos',
-//     'ponenteName': 'Milena Ruiz',
-//     'date': 'Ago 25 2022',
-//     'time': '8:00 a.m. a 10:00 a.m.',
-//     'type': 0,
-//   }),
-//   CursosVirtualesModel.fromJson({
-//     'courseName': 'Transacciones de Activos Fijos Siesa Enterprise',
-//     'ponenteName': 'Maryudi Molina',
-//     'date': 'Ago 25 2022',
-//     'time': '8:00 a.m. a 10:00 a.m.',
-//     'type': 0,
-//   }),
-//   CursosVirtualesModel.fromJson({
-//     'courseName': 'Configuración de descuentos en el pos',
-//     'ponenteName': 'Milena Ruiz',
-//     'date': 'Ago 25 2022',
-//     'time': '10:00 a.m. a 12:00 p.m.',
-//     'type': 1,
-//   }),
-//   CursosVirtualesModel.fromJson({
-//     'courseName': 'Error ZB',
-//     'ponenteName': 'Annya Pinto',
-//     'date': 'Ago 26 2022',
-//     'time': '8:00 a.m. a 10:00 a.m.',
-//     'type': 1,
-//   }),
-//   CursosVirtualesModel.fromJson({
-//     'courseName': 'Error ZB',
-//     'ponenteName': 'Annya Pinto',
-//     'date': 'Ago 26 2022',
-//     'time': '8:00 a.m. a 10:00 a.m.',
-//     'type': 2,
-//   }),
-//   CursosVirtualesModel.fromJson({
-//     'courseName': 'Error ZB',
-//     'ponenteName': 'Annya Pinto',
-//     'date': 'Ago 26 2022',
-//     'time': '8:00 a.m. a 10:00 a.m.',
-//     'type': 2,
-//   }),
-//   CursosVirtualesModel.fromJson({
-//     'courseName': 'Error ZB',
-//     'ponenteName': 'Annya Pinto',
-//     'date': 'Ago 26 2022',
-//     'time': '8:00 a.m. a 10:00 a.m.',
-//     'type': 3,
-//   }),
-//   CursosVirtualesModel.fromJson({
-//     'courseName': 'Error ZB',
-//     'ponenteName': 'Annya Pinto',
-//     'date': 'Ago 26 2022',
-//     'time': '8:00 a.m. a 10:00 a.m.',
-//     'type': 3,
-//   }),
-//   CursosVirtualesModel.fromJson({
-//     'courseName': 'Error ZB',
-//     'ponenteName': 'Annya Pinto',
-//     'date': 'Ago 26 2022',
-//     'time': '8:00 a.m. a 10:00 a.m.',
-//     'type': 2,
-//   }),
-//   CursosVirtualesModel.fromJson({
-//     'courseName': 'Error ZB',
-//     'ponenteName': 'Annya Pinto',
-//     'date': 'Ago 26 2022',
-//     'time': '8:00 a.m. a 10:00 a.m.',
-//     'type': 1,
-//   }),
-// ];
+List<CursosVirtualesModel> listaCursosVirtuales = [
+  CursosVirtualesModel.fromJson({
+    'courseName': 'Configuración de descuentos en el pos',
+    'ponenteName': 'Milena Ruiz',
+    'date': 'Ago 25 2022',
+    'time': '8:00 a.m. a 10:00 a.m.',
+    'type': 0,
+  }),
+  CursosVirtualesModel.fromJson({
+    'courseName': 'Transacciones de Activos Fijos Siesa Enterprise',
+    'ponenteName': 'Maryudi Molina',
+    'date': 'Ago 25 2022',
+    'time': '8:00 a.m. a 10:00 a.m.',
+    'type': 0,
+  }),
+  CursosVirtualesModel.fromJson({
+    'courseName': 'Configuración de descuentos en el pos',
+    'ponenteName': 'Milena Ruiz',
+    'date': 'Ago 25 2022',
+    'time': '10:00 a.m. a 12:00 p.m.',
+    'type': 1,
+  }),
+  CursosVirtualesModel.fromJson({
+    'courseName': 'Error ZB',
+    'ponenteName': 'Annya Pinto',
+    'date': 'Ago 26 2022',
+    'time': '8:00 a.m. a 10:00 a.m.',
+    'type': 1,
+  }),
+  CursosVirtualesModel.fromJson({
+    'courseName': 'Error ZB',
+    'ponenteName': 'Annya Pinto',
+    'date': 'Ago 26 2022',
+    'time': '8:00 a.m. a 10:00 a.m.',
+    'type': 2,
+  }),
+  CursosVirtualesModel.fromJson({
+    'courseName': 'Error ZB',
+    'ponenteName': 'Annya Pinto',
+    'date': 'Ago 26 2022',
+    'time': '8:00 a.m. a 10:00 a.m.',
+    'type': 2,
+  }),
+  CursosVirtualesModel.fromJson({
+    'courseName': 'Error ZB',
+    'ponenteName': 'Annya Pinto',
+    'date': 'Ago 26 2022',
+    'time': '8:00 a.m. a 10:00 a.m.',
+    'type': 3,
+  }),
+  CursosVirtualesModel.fromJson({
+    'courseName': 'Error ZB',
+    'ponenteName': 'Annya Pinto',
+    'date': 'Ago 26 2022',
+    'time': '8:00 a.m. a 10:00 a.m.',
+    'type': 3,
+  }),
+  CursosVirtualesModel.fromJson({
+    'courseName': 'Error ZB',
+    'ponenteName': 'Annya Pinto',
+    'date': 'Ago 26 2022',
+    'time': '8:00 a.m. a 10:00 a.m.',
+    'type': 2,
+  }),
+  CursosVirtualesModel.fromJson({
+    'courseName': 'Error ZB',
+    'ponenteName': 'Annya Pinto',
+    'date': 'Ago 26 2022',
+    'time': '8:00 a.m. a 10:00 a.m.',
+    'type': 1,
+  }),
+];
 
 List<TarjetaHomeModel> tarjetasHome = [
   TarjetaHomeModel.fromJson({
